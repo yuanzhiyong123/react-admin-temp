@@ -1,0 +1,37 @@
+.login_con_c{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  background: #f1eded;
+  background-image: url(../../common/img/login_bg.svg);
+  .login_container{
+    margin-top: 200px;
+    width: 500px;
+    .logo_con{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+      .logo_img{
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+      }
+      .logo_title{
+        font-size: 24px;
+        font-weight: bold;
+      }
+    }
+    .form_con{
+      margin: 0 auto;
+      width: 300px;
+      .login-form-button{
+        width: 100%;
+      }
+    }
+  }
+}

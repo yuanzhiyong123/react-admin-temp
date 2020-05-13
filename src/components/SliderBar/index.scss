@@ -1,0 +1,31 @@
+@import "@common/css/commom.scss";
+.sliderbar_con_c {
+  .logo_con {
+    width: 100%;
+    height: $header_height;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.1s all;
+    background: #fdf8f8;
+    .log_img {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+    }
+    .logo_title {
+      font-size: 20px;
+      font-weight: 500;
+      color: rgb(24, 144, 255);
+      &.logo_title_none {
+        color: transparent;
+        display: none;
+      }
+      &.logo_title_show {
+        white-space: nowrap;
+        transition-delay: 0.1s;
+        color: rgb(24, 144, 255);
+      }
+    }
+  }
+}

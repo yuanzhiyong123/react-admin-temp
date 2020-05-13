@@ -1,0 +1,79 @@
+@import './common/css/reset.scss';
+@import './common/css/commom.scss';
+
+.card_box {
+  padding: 10px 24px;
+  h1 {
+    height: 22px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #4f596f;
+    line-height: 22px;
+    margin-bottom: 18px;
+  }
+  &.form_box {
+    &::after {
+      content: '';
+      display: block;
+      height: 0px;
+      border-bottom: 1px solid #e1e7f1;
+      padding-top: 20px;
+    }
+  }
+}
+
+// 对ant默认样式覆盖
+.ant-card {
+  border-radius: 6px !important;
+  h1 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #4f596f;
+  }
+}
+.ant-table-wrapper {
+  .ant-select-selection-item {
+    font-size: 12px !important;
+  }
+  .ant-pagination-total-text {
+    font-size: 12px !important;
+  }
+  .ant-pagination-options-quick-jumper {
+    font-size: 12px !important;
+  }
+}
+.ant-table {
+  thead {
+    tr {
+      background: #fafafa !important;
+      font-weight: bold;
+    }
+  }
+  th {
+    font-size: 13px !important;
+    color: #555 !important;
+    font-weight: bold !important;
+    background: #f7f8fd !important;
+  }
+  td {
+    font-size: 12px !important;
+    border-bottom: none !important;
+  }
+  .dark_table_row {
+    background: #f9fafd;
+  }
+}
+
+/*控制整个滚动条*/
+::-webkit-scrollbar {
+  background-color: #eee;
+  width: 10px;
+  height: 10px;
+  background-clip: padding-box;
+}
+
+// /*滚动条中间滑动部分*/
+::-webkit-scrollbar-thumb {
+  background-color: #c2c2c2;
+  border-radius: 5px;
+}

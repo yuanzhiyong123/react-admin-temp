@@ -1,0 +1,34 @@
+@import "@common/css/commom.scss";
+.header_con_c {
+  box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
+  font-size: 14px;
+  background: rgb(250, 251, 255);
+  line-height: $header_height;
+  .trigger {
+    font-size: 18px;
+    line-height: $header_height;
+    padding: 0 24px;
+    cursor: pointer;
+    transition: color 0.3s;
+    &:hover {
+      color: #1890ff;
+    }
+  }
+  .user_con {
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+
+    .username {
+      margin: 0 10px;
+      color: #788395;
+      &:hover {
+        color: #1890ff;
+      }
+    }
+    .user_arro_down {
+      color: #788395;
+      font-size: 10px;
+    }
+  }
+}

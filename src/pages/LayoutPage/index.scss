@@ -1,0 +1,46 @@
+@import "@common/css/commom.scss";
+
+.layout_con_c {
+  .sliderbar_con {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: $nav_width !important;
+    max-width: $nav_width !important;
+    // background: #001529;
+    transition: 0.3s all;
+    overflow-y: auto;
+
+    &.sliderbar_collapse {
+      width: 80px !important;
+    }
+  }
+
+  .page_con {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: $nav_width;
+    right: 0;
+    transition: 0.3s all;
+
+    &.page_con_collapse {
+      left: 80px;
+    }
+    .page_con_header {
+      height: $header_height;
+    }
+    .page_container {
+      position: absolute;
+      top: $header_height + 2px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(239, 242, 247, 0.5);
+      overflow-y: auto;
+      overflow-x: hidden;
+      padding: 10px 10px;
+    }
+  }
+}
